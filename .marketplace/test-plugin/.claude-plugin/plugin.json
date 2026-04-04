@@ -1,17 +1,21 @@
 {
   "name": "test-plugin",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Test plugin with a simple MCP server that reports environment state",
   "author": {
     "name": "Test"
   },
   "userConfig": {
     "test_username": {
+      "title": "Test Username",
       "description": "A test username (not secret)",
+      "type": "string",
       "sensitive": false
     },
     "test_api_key": {
+      "title": "Test API Key",
       "description": "A test API key (secret)",
+      "type": "string",
       "sensitive": true
     }
   },
