@@ -1,0 +1,16 @@
+{
+  "name": "test_marketplace",
+  "owner": {
+    "name": "Test"
+  },
+  "metadata": {
+    "description": "Test marketplace for experimenting with plugin installation flows"
+  },
+  "plugins": [
+    {
+      "name": "test_plugin",
+      "source": "./.marketplace/test_plugin",
+      "description": "Test plugin with a simple MCP server"
+    }
+  ]
+}

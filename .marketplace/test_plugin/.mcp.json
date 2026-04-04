@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "test_mcp": {
+      "command": "uv",
+      "args": ["run", "--with", "fastmcp", "${CLAUDE_PLUGIN_ROOT}/mcps/test/server.py"],
+      "env": {
+        "TEST_ENV_VARIABLE": ""
+      }
+    }
+  }
+}
