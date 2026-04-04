@@ -1,8 +1,20 @@
 {
   "name": "test-plugin",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Test plugin with a simple MCP server that reports environment state",
   "author": {
     "name": "Test"
+  },
+  "mcpServers": {
+    "test-mcp": {
+      "command": "uv",
+      "args": ["run", "--with", "fastmcp", "${CLAUDE_PLUGIN_ROOT}/mcps/test/server.py"],
+      "env": {
+        "TEST_ENV_VARIABLE": "${TEST_ENV_VARIABLE}",
+        "TEST_DEFAULT_VARIABLE": "set in repo",
+        "CLAUDE_PLUGIN_ROOT": "${CLAUDE_PLUGIN_ROOT}",
+        "CLAUDE_PLUGIN_DATA": "${CLAUDE_PLUGIN_DATA}"
+      }
+    }
   }
 }
