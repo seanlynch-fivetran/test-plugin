@@ -19,3 +19,12 @@ Everything lives under `.marketplace/test-plugin/` — no build step, no source 
 - **MCP Server**: `test-mcp` — single-file FastMCP/Python server, run with `uv`
 - **Skill**: `test-skill` — calls `get_server_info`
 - **Tool**: `get_server_info` — reports `TEST_ENV_VARIABLE` and the server's CWD
+
+
+## Claude Code behavior
+
+From CLI, not sure if this applies/is shared with claude desktop
+
+/Users/.../.claude/plugins/marketplaces
+- /Users/.../.claude/plugins/installed_plugins.json - contains plugins/scopes/version info
+- /Users/.../.claude/plugins/cache/
