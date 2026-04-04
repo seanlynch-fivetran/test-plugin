@@ -3,7 +3,7 @@
 import os
 from fastmcp import FastMCP
 
-mcp = FastMCP("test_mcp")
+mcp = FastMCP("test-mcp")
 
 
 @mcp.tool()

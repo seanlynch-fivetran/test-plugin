@@ -1,5 +1,5 @@
 {
-  "name": "test_marketplace",
+  "name": "test-marketplace",
   "owner": {
     "name": "Test"
   },
@@ -8,8 +8,8 @@
   },
   "plugins": [
     {
-      "name": "test_plugin",
-      "source": "./.marketplace/test_plugin",
+      "name": "test-plugin",
+      "source": "./.marketplace/test-plugin",
       "description": "Test plugin with a simple MCP server"
     }
   ]

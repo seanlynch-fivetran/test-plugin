@@ -1,5 +1,5 @@
 {
-  "name": "test_plugin",
+  "name": "test-plugin",
   "version": "1.0.0",
   "description": "Test plugin with a simple MCP server that reports environment state",
   "author": {

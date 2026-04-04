@@ -2,12 +2,20 @@
 
 A minimal Claude Code marketplace plugin for testing installation flows.
 
+## Installation
+
+```
+/plugin marketplace add seanlynch-fivetran/test-plugin
+/plugin install test-plugin@test-marketplace
+```
+
+
 ## Structure
 
-- **Marketplace**: `test_marketplace` — one plugin
-- **Plugin**: `test_plugin` — one MCP server, one skill
-- **MCP Server**: `test_mcp` — single-file FastMCP/Python server, run with `uv`
-- **Skill**: `test_skill` — calls `get_server_info`
+- **Marketplace**: `test-marketplace` — one plugin
+- **Plugin**: `test-plugin` — one MCP server, one skill
+- **MCP Server**: `test-mcp` — single-file FastMCP/Python server, run with `uv`
+- **Skill**: `test-skill` — calls `get_server_info`
 - **Tool**: `get_server_info` — reports `TEST_ENV_VARIABLE` and the server's CWD
 
 ## No build step
