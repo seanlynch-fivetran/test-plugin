@@ -1,9 +1,19 @@
 {
   "name": "test-plugin",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "Test plugin with a simple MCP server that reports environment state",
   "author": {
     "name": "Test"
+  },
+  "userConfig": {
+    "test_username": {
+      "description": "A test username (not secret)",
+      "sensitive": false
+    },
+    "test_api_key": {
+      "description": "A test API key (secret)",
+      "sensitive": true
+    }
   },
   "mcpServers": {
     "test-mcp": {
@@ -13,7 +23,9 @@
         "TEST_ENV_VARIABLE": "${TEST_ENV_VARIABLE}",
         "TEST_DEFAULT_VARIABLE": "set in repo",
         "CLAUDE_PLUGIN_ROOT": "${CLAUDE_PLUGIN_ROOT}",
-        "CLAUDE_PLUGIN_DATA": "${CLAUDE_PLUGIN_DATA}"
+        "CLAUDE_PLUGIN_DATA": "${CLAUDE_PLUGIN_DATA}",
+        "TEST_USERNAME": "${user_config.test_username}",
+        "TEST_API_KEY": "${user_config.test_api_key}"
       }
     }
   }

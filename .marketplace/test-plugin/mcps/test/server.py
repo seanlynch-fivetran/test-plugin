@@ -14,6 +14,8 @@ def get_server_info() -> dict:
         "test_default_variable": os.environ.get("TEST_DEFAULT_VARIABLE", "<not set>"),
         "claude_plugin_root": os.environ.get("CLAUDE_PLUGIN_ROOT", "<not set>"),
         "claude_plugin_data": os.environ.get("CLAUDE_PLUGIN_DATA", "<not set>"),
+        "test_username": os.environ.get("TEST_USERNAME", "<not set>"),
+        "test_api_key": os.environ.get("TEST_API_KEY", "<not set>"),
         "cwd": os.getcwd(),
     }
 
