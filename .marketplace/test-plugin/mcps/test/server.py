@@ -8,14 +8,9 @@ mcp = FastMCP("test-mcp")
 
 @mcp.tool()
 def get_server_info() -> dict:
-    """Report environment variables and the current working directory of the server."""
+    """Report all environment variables and the current working directory of the server."""
     return {
-        "test_env_variable": os.environ.get("TEST_ENV_VARIABLE", "<not set>"),
-        "test_default_variable": os.environ.get("TEST_DEFAULT_VARIABLE", "<not set>"),
-        "claude_plugin_root": os.environ.get("CLAUDE_PLUGIN_ROOT", "<not set>"),
-        "claude_plugin_data": os.environ.get("CLAUDE_PLUGIN_DATA", "<not set>"),
-        "test_username": os.environ.get("TEST_USERNAME", "<not set>"),
-        "test_api_key": os.environ.get("TEST_API_KEY", "<not set>"),
+        "env": dict(os.environ),
         "cwd": os.getcwd(),
     }
 
