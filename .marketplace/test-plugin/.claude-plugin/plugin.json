@@ -1,6 +1,6 @@
 {
   "name": "test-plugin",
-  "version": "1.2.1",
+  "version": "1.3.0",
   "description": "Test plugin with a simple MCP server that reports environment state",
   "author": {
     "name": "Test"
@@ -17,20 +17,6 @@
       "description": "A test API key (secret)",
       "type": "string",
       "sensitive": true
-    }
-  },
-  "mcpServers": {
-    "test-mcp": {
-      "command": "uv",
-      "args": ["run", "--with", "fastmcp", "${CLAUDE_PLUGIN_ROOT}/mcps/test/server.py"],
-      "env": {
-        "TEST_ENV_VARIABLE": "${TEST_ENV_VARIABLE}",
-        "TEST_DEFAULT_VARIABLE": "set in repo",
-        "CLAUDE_PLUGIN_ROOT": "${CLAUDE_PLUGIN_ROOT}",
-        "CLAUDE_PLUGIN_DATA": "${CLAUDE_PLUGIN_DATA}",
-        "TEST_USERNAME": "${user_config.test_username}",
-        "TEST_API_KEY": "${user_config.test_api_key}"
-      }
     }
   }
 }

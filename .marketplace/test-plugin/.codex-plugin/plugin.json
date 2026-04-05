@@ -1,0 +1,18 @@
+{
+  "name": "test-plugin",
+  "version": "1.3.0",
+  "description": "Test plugin with a simple MCP server that reports environment state",
+  "author": {
+    "name": "Test"
+  },
+  "keywords": ["testing", "mcp"],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Test Plugin",
+    "shortDescription": "A minimal test plugin for experimenting with installation flows",
+    "developerName": "Test",
+    "category": "Testing",
+    "capabilities": ["Read"]
+  }
+}
